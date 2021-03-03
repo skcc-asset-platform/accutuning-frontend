@@ -1,0 +1,24 @@
+// colors
+$color_darkblue:#393556;
+$color_red:#f43536;
+$color_blue:#2211a0;
+
+// color-status
+$status_creat:#efba00;
+$status_ready:#4bb960;
+$status_learn:#0576eb;
+$status_finish:#eb0571;
+
+// ico_lab
+@mixin ico_lab {
+    background:url('../images/ico_lab.png');
+    background-size: 200px 200px;
+}
+
+// btn_g
+@mixin btn_g {
+    display: inline-block;
+    height: 34px;
+    padding: 0 20px;
+    border-radius: 3px;
+}

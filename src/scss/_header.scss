@@ -1,0 +1,38 @@
+header {
+    background-color:$color_darkblue;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:100px;
+        color:#fff;
+
+        a {
+            color:#fff;
+        }
+    }
+
+    .wrap_endpoint {
+        display: flex;
+        align-items: center;
+
+        .inp_g {
+            margin:0 5px;
+        }
+        .btn_edit {
+            margin:0 0 0 5px;
+        }
+        .ico_edit {
+            width:16px;
+            height:16px;
+            vertical-align: middle;
+            background-position: -180px 0;
+        }
+        .ico_save {
+            width:16px;
+            height:16px;
+            background-position: -120px 0;
+        }
+    }
+}

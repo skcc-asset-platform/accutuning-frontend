@@ -1,0 +1,116 @@
+.utill_tbl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color:#111;
+
+    .ico_check {
+        width:10px;
+        height:10px;
+        margin:6px 4px 0 0;
+        background-position: -150px 0;
+    }
+
+    .info_runtimes {
+        color:#737373;
+    }
+}
+.wrap_source {
+    width:100%;
+    flex: 0 0 auto;
+    margin-bottom: 50px;
+
+    .btn_border {
+        margin:0 5px;
+    }
+    .tbl_g {
+        margin:14px 0 0;
+    }
+}
+.tbl_g {
+    td {
+        .ico_start {
+            width:25px;
+            height:25px;
+        }
+        .ico_stop {
+            width:25px;
+            height:25px;
+            background-position: 0 -60px;
+        }
+        .ico_del {
+            width:25px;
+            height:25px;
+            background-position: 0 -30px;
+        }
+        .ico_make {
+            width:25px;
+            height:25px;
+            background-position: 0 -90px;
+        }
+
+        button {
+            &:hover {
+                .ico_lab {
+                    background-position-x:-30px
+                }
+            }
+
+            &:active {
+                .ico_lab {
+                    background-position-x: -60px;
+                }
+            }
+
+            &:disabled {
+                cursor: default;
+                .ico_lab {
+                    background-position-x: -90px;
+                }
+            }
+        }
+    }
+}
+
+.list_detail {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    border: 1px solid #111;
+    border-width: 1px 0;
+
+    dt {
+        grid-row:span 100;
+        padding:7px 20px;
+        border-right:1px dashed #d6d6d6;
+        background-color:#fafafa;
+    }
+    dd {
+        padding:7px 20px;
+
+        select {
+            margin-right:8px;
+        }
+    }
+
+    & + .list_detail {
+        position: relative;
+        margin-top:-1px;
+        border-top-color:#d6d6d6;
+    }
+    .helptext {
+        color:#555;
+        word-break: keep-all;
+    }
+
+    .wrap_btn + & {
+        margin-top:20px;
+    }
+}
+.tit_sub {
+    display: block;
+}
+.ace_editor {
+    margin-bottom: 12px;
+}
